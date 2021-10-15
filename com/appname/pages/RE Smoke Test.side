@@ -1,0 +1,373 @@
+{
+  "id": "decf613c-6799-4abd-aee0-3960fa02df3b",
+  "version": "2.0",
+  "name": "RE Smoke Test",
+  "url": "http://realty-real-estatem1.upskills.in",
+  "tests": [{
+    "id": "80a4ecba-34ac-4620-8434-7dcc41dcd61d",
+    "name": "user homepage",
+    "commands": [{
+      "id": "4ce2ed8a-4951-4b03-a9ec-50da56ae0d26",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "814822b2-1f2a-4c86-882b-c7de867fba02",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e99329ce-71ef-4fb9-943e-e7c490055e88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign-in",
+      "targets": [
+        ["css=.sign-in", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In / Register')]", "xpath:link"],
+        ["xpath=//ul[@id='responsive']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://realty-real-estatem1.upskills.in/my-profile/']", "xpath:href"],
+        ["xpath=//nav/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb1e30cc-a02f-4216-bb1f-828580373da9",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/form/p/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac33b093-1437-498d-b19a-8908f3b4058b",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/form/p/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Varshu"
+    }, {
+      "id": "ea1a4781-1d49-4d01-a0a7-4184e8c35fa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login > .form-row:nth-child(3)",
+      "targets": [
+        ["css=.login > .form-row:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='tab1']/form/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,' Remember Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffe43eb9-67c6-413f-8e61-05dcb4fe2f4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//p[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa4c96f-bc0a-4944-8b73-a91512f9f4fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//p[2]/label/input", "xpath:position"]
+      ],
+      "value": "Varshitha"
+    }, {
+      "id": "0a074643-b186-487a-acd0-7c826a04c99f",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0833eefe-91a2-4888-a628-28488025679f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Real Estate",
+      "targets": [
+        ["linkText=Real Estate", "linkText"],
+        ["css=h2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Real Estate')]", "xpath:link"],
+        ["xpath=//div[@id='logo']/h2/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://realty-real-estatem1.upskills.in/']", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Real Estate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14f813b2-bb2c-4c59-b4cd-4828faceb09e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user-name",
+      "targets": [
+        ["css=.user-name", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1fbe246-79bb-4a67-ae01-f45517360685",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.user-name",
+      "targets": [
+        ["css=.user-name", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Hi, VARSHITHA!"
+    }, {
+      "id": "8ccd891c-cd3f-4662-b8fd-455e2b41722b",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=My Profile",
+      "targets": [
+        ["linkText=My Profile", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://realty-real-estatem1.upskills.in/my-profile/']", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' My Profile')]", "xpath:innerText"]
+      ],
+      "value": "My Profile"
+    }, {
+      "id": "83495097-a620-4ff4-a7b1-db58465d7daa",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Bookmarks",
+      "targets": [
+        ["linkText=Bookmarks", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://realty-real-estatem1.upskills.in/my-bookmarks/']", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Bookmarks')]", "xpath:innerText"]
+      ],
+      "value": "Bookmarks"
+    }, {
+      "id": "5aa23bdb-42bb-47ad-8a0f-a549f998bee4",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://realty-real-estatem1.upskills.in/wp-login.php?action=logout&redirect_to=http%3A%2F%2Frealty-real-estatem1.upskills.in%2Fmy-profile%2F&_wpnonce=c3395c777f']", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Log Out')]", "xpath:innerText"]
+      ],
+      "value": "Log Out"
+    }, {
+      "id": "3ca353eb-10db-4530-8bd8-14fa76ab780c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpb_column:nth-child(1) > .vc_column-inner > .wpb_wrapper > .icon-box-1 > h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(1) > .vc_column-inner > .wpb_wrapper > .icon-box-1 > h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Realty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20c78b8e-f52a-48f8-bccf-5b9964799abd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpb_column:nth-child(1) > .vc_column-inner > .wpb_wrapper > .icon-box-1 > h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(1) > .vc_column-inner > .wpb_wrapper > .icon-box-1 > h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Realty')]", "xpath:innerText"]
+      ],
+      "value": "Realty"
+    }, {
+      "id": "146170fe-4e54-4bf9-98a3-093b7eafbdfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpb_column:nth-child(2) h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(2) h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div[2]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Home Loan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b417244-e1c9-4206-a0a6-dbad4a7db536",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpb_column:nth-child(2) h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(2) h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div[2]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Home Loan')]", "xpath:innerText"]
+      ],
+      "value": "Home Loan"
+    }, {
+      "id": "907c91fc-e67b-4ce3-91a0-ab8f910216b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpb_column:nth-child(3) h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(3) h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div[3]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Interiors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd29774-ee5f-4a44-b10b-c5567c9e83df",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpb_column:nth-child(3) h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(3) h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div[3]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Interiors')]", "xpath:innerText"]
+      ],
+      "value": "Interiors"
+    }, {
+      "id": "1ff336fe-ed35-4b60-9efe-ae1e59ed4e9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpb_column:nth-child(4) h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(4) h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div[4]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Legal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bfe5794-db9a-4c89-abfc-530636655afa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpb_column:nth-child(4) h3",
+      "targets": [
+        ["css=.wpb_column:nth-child(4) h3", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[3]/div/div/div/div/div[4]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Legal')]", "xpath:innerText"]
+      ],
+      "value": "Legal"
+    }, {
+      "id": "78972777-1545-4dd8-bb59-ad0c28dda770",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-facebook",
+      "targets": [
+        ["css=.icon-facebook", "css:finder"],
+        ["xpath=//div[@id='top-bar']/div/div[2]/ul/li/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe0ae7ca-39f8-4a30-b7a5-2f2a3d4c37fd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.social-icons .twitter",
+      "targets": [
+        ["css=.social-icons .twitter", "css:finder"],
+        ["xpath=//div[@id='top-bar']/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f9c9a5-32ba-4082-8582-e10676ccd8d8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-gplus",
+      "targets": [
+        ["css=.icon-gplus", "css:finder"],
+        ["xpath=//div[@id='top-bar']/div/div[2]/ul/li[3]/a/i", "xpath:idRelative"],
+        ["xpath=//li[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02e96b90-64f4-4be2-a5e2-beda10d5afcd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-rss",
+      "targets": [
+        ["css=.icon-rss", "css:finder"],
+        ["xpath=//div[@id='top-bar']/div/div[2]/ul/li[4]/a/i", "xpath:idRelative"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7e66066-4538-434b-9383-db2f5950a505",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vc_row:nth-child(12) .vc_column-inner",
+      "targets": [
+        ["css=.vc_row:nth-child(12) .vc_column-inner", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[12]/div/div", "xpath:idRelative"],
+        ["xpath=//article/div[12]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be7bbc82-a0ca-4e90-86ee-a8e90caae5e0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.margin-top-15",
+      "targets": [
+        ["css=.margin-top-15", "css:finder"],
+        ["xpath=//article[@id='post-170']/div[12]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Realty News & Articles')]", "xpath:innerText"]
+      ],
+      "value": "Realty News & Articles"
+    }]
+  }],
+  "suites": [{
+    "id": "592a1487-2dc1-4d39-839a-81b23c330fc6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://realty-real-estatem1.upskills.in/"],
+  "plugins": []
+}
