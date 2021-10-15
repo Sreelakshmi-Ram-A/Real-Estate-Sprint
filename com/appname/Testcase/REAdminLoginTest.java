@@ -1,6 +1,7 @@
-package RealEstate.test;
-
-import static org.testng.Assert.assertEquals;
+/**
+ * 
+ */
+package com.appname.Testcase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import RealEstate.pages.REAdminLoginPage;
+import com.appname.pages.REAdminLoginPage;
 
 public class REAdminLoginTest {
 	static WebDriver driver;
@@ -18,7 +19,7 @@ public class REAdminLoginTest {
 	public void veryfylogin()
 	{
 	
-		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ss145\\OneDrive - Capgemini\\Documents\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://realty-real-estatem1.upskills.in/my-profile/?redirect_to=http://realty-real-estatem1.upskills.in/wp-admin/\r\n"
 				+ "");
@@ -47,4 +48,3 @@ public class REAdminLoginTest {
 	}
 	
 }
-
