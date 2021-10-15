@@ -1,0 +1,315 @@
+{
+  "id": "bc22b51f-ddef-4543-b482-d165c68db615",
+  "version": "2.0",
+  "name": "Smoke Test",
+  "url": "http://realty-real-estatem1.upskills.in/wp-admin/profile.php",
+  "tests": [{
+    "id": "e02b5a46-410b-4b1e-8888-a3b9ce733dfc",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "49300ece-ed2c-4e35-ba3c-4badd8b95951",
+    "name": "RealEstate_Admin_Profile",
+    "commands": [{
+      "id": "507ef2ca-aa21-4a37-846b-4d8fcee06a4d",
+      "comment": "",
+      "command": "open",
+      "target": "http://realty-real-estatem1.upskills.in/wp-admin/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e06ed9d-42c2-4c7b-9a3d-654282b06984",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08dc59c4-3434-448f-84a8-c37d112fb892",
+      "comment": "",
+      "command": "click",
+      "target": "id=profile-page",
+      "targets": [
+        ["id=profile-page", "id"],
+        ["css=#profile-page", "css:finder"],
+        ["xpath=//div[@id='profile-page']", "xpath:attributes"],
+        ["xpath=//div[@id='wpbody-content']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9590c4a2-3ef7-47f5-97cc-e84c56d4e185",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=profile-page",
+      "targets": [
+        ["id=profile-page", "id"],
+        ["css=#profile-page", "css:finder"],
+        ["xpath=//div[@id='profile-page']", "xpath:attributes"],
+        ["xpath=//div[@id='wpbody-content']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": "Profile\\nHola! Would you like to receive automatic updates and unlock premium support? Please activate your copy of WPBakery Page Builder.\\nDismiss this notice.\\nPersonal Options\\nVisual Editor Disable the visual editor when writing\\nSyntax Highlighting Disable syntax highlighting when editing code\\nAdmin Color Scheme\\nAdmin Color Scheme\\nDefault\\n        Light\\n        Blue\\n        Coffee\\n        Ectoplasm\\n        Midnight\\n        Ocean\\n        Sunrise\\n        Keyboard Shortcuts Enable keyboard shortcuts for comment moderation. More information\\nToolbar\\nToolbar\\nShow Toolbar when viewing site\\nName\\nUsername Usernames cannot be changed.\\nFirst Name\\nLast Name\\nNickname (required)\\nDisplay name publicly as \\n     \\nSimmy\\n     admin\\n     Simran\\n     Gupta\\n     Simran Gupta\\n     Gupta Simran\\n     Contact Info\\nEmail (required)\\nWebsite\\nPhone\\nTwitter\\nFacebook URL\\nGoogle+ URL\\nLinkedin\\nAbout Yourself\\nBiographical Info\\nShare a little biographical information to fill out your profile. This may be shown publicly.\\nProfile Picture\\nYou can change your profile picture on Gravatar.\\nAccount Management\\nNew Password Generate Password\\nSessions\\nLog Out Everywhere Else\\nDid you lose your phone or leave your account logged in at a public computer? You can log out everywhere else, and stay logged in here.\\nRealteo Avatar\\nAgent Avatar This avatar will be displayed instead of default one\\nExtra profile information\\nTitle This text will be displayed below your Name on Agents list\\nCustomer billing address\\nFirst name\\nLast name\\nCompany\\nAddress line 1\\nAddress line 2\\nCity\\nPostcode / ZIP\\nCountry\\n                   Select a country…\\n                   Åland Islands\\n                   Afghanistan\\n                   Albania\\n                   Algeria\\n                   American Samoa\\n                   Andorra\\n                   Angola\\n                   Anguilla\\n                   Antarctica\\n                   Antigua and Barbuda\\n                   Argentina\\n                   Armenia\\n                   Aruba\\n                   Australia\\n                   Austria\\n                   Azerbaijan\\n                   Bahamas\\n                   Bahrain\\n                   Bangladesh\\n                   Barbados\\n                   Belarus\\n                   Belau\\n                   Belgium\\n                   Belize\\n                   Benin\\n                   Bermuda\\n                   Bhutan\\n                   Bolivia\\n                   Bonaire, Saint Eustatius and Saba\\n                   Bosnia and Herzegovina\\n                   Botswana\\n                   Bouvet Island\\n                   Brazil\\n                   British Indian Ocean Territory\\n                   British Virgin Islands\\n                   Brunei\\n                   Bulgaria\\n                   Burkina Faso\\n                   Burundi\\n                   Cambodia\\n                   Cameroon\\n                   Canada\\n                   Cape Verde\\n                   Cayman Islands\\n                   Central African Republic\\n                   Chad\\n                   Chile\\n                   China\\n                   Christmas Island\\n                   Cocos (Keeling) Islands\\n                   Colombia\\n                   Comoros\\n                   Congo (Brazzaville)\\n                   Congo (Kinshasa)\\n                   Cook Islands\\n                   Costa Rica\\n                   Croatia\\n                   Cuba\\n                   Curaçao\\n                   Cyprus\\n                   Czech Republic\\n                   Denmark\\n                   Djibouti\\n                   Dominica\\n                   Dominican Republic\\n                   Ecuador\\n                   Egypt\\n                   El Salvador\\n                   Equatorial Guinea\\n                   Eritrea\\n                   Estonia\\n                   Ethiopia\\n                   Falkland Islands\\n                   Faroe Islands\\n                   Fiji\\n                   Finland\\n                   France\\n                   French Guiana\\n                   French Polynesia\\n                   French Southern Territories\\n                   Gabon\\n                   Gambia\\n                   Georgia\\n                   Germany\\n                   Ghana\\n                   Gibraltar\\n                   Greece\\n                   Greenland\\n                   Grenada\\n                   Guadeloupe\\n                   Guam\\n                   Guatemala\\n                   Guernsey\\n                   Guinea\\n                   Guinea-Bissau\\n                   Guyana\\n                   Haiti\\n                   Heard Island and McDonald Islands\\n                   Honduras\\n                   Hong Kong\\n                   Hungary\\n                   Iceland\\n                   India\\n                   Indonesia\\n                   Iran\\n                   Iraq\\n                   Ireland\\n                   Isle of Man\\n                   Israel\\n                   Italy\\n                   Ivory Coast\\n                   Jamaica\\n                   Japan\\n                   Jersey\\n                   Jordan\\n                   Kazakhstan\\n                   Kenya\\n                   Kiribati\\n                   Kuwait\\n                   Kyrgyzstan\\n                   Laos\\n                   Latvia\\n                   Lebanon\\n                   Lesotho\\n                   Liberia\\n                   Libya\\n                   Liechtenstein\\n                   Lithuania\\n                   Luxembourg\\n                   Macao S.A.R., China\\n                   Macedonia\\n                   Madagascar\\n                   Malawi\\n                   Malaysia\\n                   Maldives\\n                   Mali\\n                   Malta\\n                   Marshall Islands\\n                   Martinique\\n                   Mauritania\\n                   Mauritius\\n                   Mayotte\\n                   Mexico\\n                   Micronesia\\n                   Moldova\\n                   Monaco\\n                   Mongolia\\n                   Montenegro\\n                   Montserrat\\n                   Morocco\\n                   Mozambique\\n                   Myanmar\\n                   Namibia\\n                   Nauru\\n                   Nepal\\n                   Netherlands\\n                   New Caledonia\\n                   New Zealand\\n                   Nicaragua\\n                   Niger\\n                   Nigeria\\n                   Niue\\n                   Norfolk Island\\n                   North Korea\\n                   Northern Mariana Islands\\n                   Norway\\n                   Oman\\n                   Pakistan\\n                   Palestinian Territory\\n                   Panama\\n                   Papua New Guinea\\n                   Paraguay\\n                   Peru\\n                   Philippines\\n                   Pitcairn\\n                   Poland\\n                   Portugal\\n                   Puerto Rico\\n                   Qatar\\n                   Reunion\\n                   Romania\\n                   Russia\\n                   Rwanda\\n                   São Tomé and Príncipe\\n                   Saint Barthélemy\\n                   Saint Helena\\n                   Saint Kitts and Nevis\\n                   Saint Lucia\\n                   Saint Martin (Dutch part)\\n                   Saint Martin (French part)\\n                   Saint Pierre and Miquelon\\n                   Saint Vincent and the Grenadines\\n                   Samoa\\n                   San Marino\\n                   Saudi Arabia\\n                   Senegal\\n                   Serbia\\n                   Seychelles\\n                   Sierra Leone\\n                   Singapore\\n                   Slovakia\\n                   Slovenia\\n                   Solomon Islands\\n                   Somalia\\n                   South Africa\\n                   South Georgia/Sandwich Islands\\n                   South Korea\\n                   South Sudan\\n                   Spain\\n                   Sri Lanka\\n                   Sudan\\n                   Suriname\\n                   Svalbard and Jan Mayen\\n                   Swaziland\\n                   Sweden\\n                   Switzerland\\n                   Syria\\n                   Taiwan\\n                   Tajikistan\\n                   Tanzania\\n                   Thailand\\n                   Timor-Leste\\n                   Togo\\n                   Tokelau\\n                   Tonga\\n                   Trinidad and Tobago\\n                   Tunisia\\n                   Turkey\\n                   Turkmenistan\\n                   Turks and Caicos Islands\\n                   Tuvalu\\n                   Uganda\\n                   Ukraine\\n                   United Arab Emirates\\n                   United Kingdom (UK)\\n                   United States (US)\\n                   United States (US) Minor Outlying Islands\\n                   United States (US) Virgin Islands\\n                   Uruguay\\n                   Uzbekistan\\n                   Vanuatu\\n                   Vatican\\n                   Venezuela\\n                   Vietnam\\n                   Wallis and Futuna\\n                   Western Sahara\\n                   Yemen\\n                   Zambia\\n                   Zimbabwe\\n                 Select a country…\\n\\nState / County\\nState / County or state code\\nPhone\\nEmail address\\nCustomer shipping address\\nCopy from billing address Copy\\nFirst name\\nLast name\\nCompany\\nAddress line 1\\nAddress line 2\\nCity\\nPostcode / ZIP\\nCountry\\n                   Select a country…\\n                   Åland Islands\\n                   Afghanistan\\n                   Albania\\n                   Algeria\\n                   American Samoa\\n                   Andorra\\n                   Angola\\n                   Anguilla\\n                   Antarctica\\n                   Antigua and Barbuda\\n                   Argentina\\n                   Armenia\\n                   Aruba\\n                   Australia\\n                   Austria\\n                   Azerbaijan\\n                   Bahamas\\n                   Bahrain\\n                   Bangladesh\\n                   Barbados\\n                   Belarus\\n                   Belau\\n                   Belgium\\n                   Belize\\n                   Benin\\n                   Bermuda\\n                   Bhutan\\n                   Bolivia\\n                   Bonaire, Saint Eustatius and Saba\\n                   Bosnia and Herzegovina\\n                   Botswana\\n                   Bouvet Island\\n                   Brazil\\n                   British Indian Ocean Territory\\n                   British Virgin Islands\\n                   Brunei\\n                   Bulgaria\\n                   Burkina Faso\\n                   Burundi\\n                   Cambodia\\n                   Cameroon\\n                   Canada\\n                   Cape Verde\\n                   Cayman Islands\\n                   Central African Republic\\n                   Chad\\n                   Chile\\n                   China\\n                   Christmas Island\\n                   Cocos (Keeling) Islands\\n                   Colombia\\n                   Comoros\\n                   Congo (Brazzaville)\\n                   Congo (Kinshasa)\\n                   Cook Islands\\n                   Costa Rica\\n                   Croatia\\n                   Cuba\\n                   Curaçao\\n                   Cyprus\\n                   Czech Republic\\n                   Denmark\\n                   Djibouti\\n                   Dominica\\n                   Dominican Republic\\n                   Ecuador\\n                   Egypt\\n                   El Salvador\\n                   Equatorial Guinea\\n                   Eritrea\\n                   Estonia\\n                   Ethiopia\\n                   Falkland Islands\\n                   Faroe Islands\\n                   Fiji\\n                   Finland\\n                   France\\n                   French Guiana\\n                   French Polynesia\\n                   French Southern Territories\\n                   Gabon\\n                   Gambia\\n                   Georgia\\n                   Germany\\n                   Ghana\\n                   Gibraltar\\n                   Greece\\n                   Greenland\\n                   Grenada\\n                   Guadeloupe\\n                   Guam\\n                   Guatemala\\n                   Guernsey\\n                   Guinea\\n                   Guinea-Bissau\\n                   Guyana\\n                   Haiti\\n                   Heard Island and McDonald Islands\\n                   Honduras\\n                   Hong Kong\\n                   Hungary\\n                   Iceland\\n                   India\\n                   Indonesia\\n                   Iran\\n                   Iraq\\n                   Ireland\\n                   Isle of Man\\n                   Israel\\n                   Italy\\n                   Ivory Coast\\n                   Jamaica\\n                   Japan\\n                   Jersey\\n                   Jordan\\n                   Kazakhstan\\n                   Kenya\\n                   Kiribati\\n                   Kuwait\\n                   Kyrgyzstan\\n                   Laos\\n                   Latvia\\n                   Lebanon\\n                   Lesotho\\n                   Liberia\\n                   Libya\\n                   Liechtenstein\\n                   Lithuania\\n                   Luxembourg\\n                   Macao S.A.R., China\\n                   Macedonia\\n                   Madagascar\\n                   Malawi\\n                   Malaysia\\n                   Maldives\\n                   Mali\\n                   Malta\\n                   Marshall Islands\\n                   Martinique\\n                   Mauritania\\n                   Mauritius\\n                   Mayotte\\n                   Mexico\\n                   Micronesia\\n                   Moldova\\n                   Monaco\\n                   Mongolia\\n                   Montenegro\\n                   Montserrat\\n                   Morocco\\n                   Mozambique\\n                   Myanmar\\n                   Namibia\\n                   Nauru\\n                   Nepal\\n                   Netherlands\\n                   New Caledonia\\n                   New Zealand\\n                   Nicaragua\\n                   Niger\\n                   Nigeria\\n                   Niue\\n                   Norfolk Island\\n                   North Korea\\n                   Northern Mariana Islands\\n                   Norway\\n                   Oman\\n                   Pakistan\\n                   Palestinian Territory\\n                   Panama\\n                   Papua New Guinea\\n                   Paraguay\\n                   Peru\\n                   Philippines\\n                   Pitcairn\\n                   Poland\\n                   Portugal\\n                   Puerto Rico\\n                   Qatar\\n                   Reunion\\n                   Romania\\n                   Russia\\n                   Rwanda\\n                   São Tomé and Príncipe\\n                   Saint Barthélemy\\n                   Saint Helena\\n                   Saint Kitts and Nevis\\n                   Saint Lucia\\n                   Saint Martin (Dutch part)\\n                   Saint Martin (French part)\\n                   Saint Pierre and Miquelon\\n                   Saint Vincent and the Grenadines\\n                   Samoa\\n                   San Marino\\n                   Saudi Arabia\\n                   Senegal\\n                   Serbia\\n                   Seychelles\\n                   Sierra Leone\\n                   Singapore\\n                   Slovakia\\n                   Slovenia\\n                   Solomon Islands\\n                   Somalia\\n                   South Africa\\n                   South Georgia/Sandwich Islands\\n                   South Korea\\n                   South Sudan\\n                   Spain\\n                   Sri Lanka\\n                   Sudan\\n                   Suriname\\n                   Svalbard and Jan Mayen\\n                   Swaziland\\n                   Sweden\\n                   Switzerland\\n                   Syria\\n                   Taiwan\\n                   Tajikistan\\n                   Tanzania\\n                   Thailand\\n                   Timor-Leste\\n                   Togo\\n                   Tokelau\\n                   Tonga\\n                   Trinidad and Tobago\\n                   Tunisia\\n                   Turkey\\n                   Turkmenistan\\n                   Turks and Caicos Islands\\n                   Tuvalu\\n                   Uganda\\n                   Ukraine\\n                   United Arab Emirates\\n                   United Kingdom (UK)\\n                   United States (US)\\n                   United States (US) Minor Outlying Islands\\n                   United States (US) Virgin Islands\\n                   Uruguay\\n                   Uzbekistan\\n                   Vanuatu\\n                   Vatican\\n                   Venezuela\\n                   Vietnam\\n                   Wallis and Futuna\\n                   Western Sahara\\n                   Yemen\\n                   Zambia\\n                   Zimbabwe\\n                 Select a country…\\n\\nState / County\\nState / County or state code"
+    }, {
+      "id": "488a4ee1-13e7-4613-aa30-18dd025b4389",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(4)",
+      "targets": [
+        ["css=h2:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2", "xpath:idRelative"],
+        ["xpath=//form/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Personal Options')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a539ca74-cb28-4326-a704-26cc2eeda086",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(4)",
+      "targets": [
+        ["css=h2:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2", "xpath:idRelative"],
+        ["xpath=//form/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Personal Options')]", "xpath:innerText"]
+      ],
+      "value": "Personal Options"
+    }, {
+      "id": "5765d550-7a80-4c17-8afc-a5d23aa2b524",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(6)",
+      "targets": [
+        ["css=h2:nth-child(6)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[2]", "xpath:idRelative"],
+        ["xpath=//h2[2]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec2b521-528a-4304-9182-ff6ffab06788",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(6)",
+      "targets": [
+        ["css=h2:nth-child(6)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[2]", "xpath:idRelative"],
+        ["xpath=//h2[2]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Name')]", "xpath:innerText"]
+      ],
+      "value": "Name"
+    }, {
+      "id": "01eaf773-eea6-4883-8bb3-3d28d9cb5429",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(8)",
+      "targets": [
+        ["css=h2:nth-child(8)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[3]", "xpath:idRelative"],
+        ["xpath=//h2[3]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Contact Info')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a627f1c6-bd76-4df5-b2c6-14780334e7ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(8)",
+      "targets": [
+        ["css=h2:nth-child(8)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[3]", "xpath:idRelative"],
+        ["xpath=//h2[3]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Contact Info')]", "xpath:innerText"]
+      ],
+      "value": "Contact Info"
+    }, {
+      "id": "1e0b5377-9276-47ed-aa1f-da6f9c97b3e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(10)",
+      "targets": [
+        ["css=h2:nth-child(10)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[4]", "xpath:idRelative"],
+        ["xpath=//h2[4]", "xpath:position"],
+        ["xpath=//h2[contains(.,'About Yourself')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62f22588-fa57-433e-946e-42da30c3021b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(10)",
+      "targets": [
+        ["css=h2:nth-child(10)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[4]", "xpath:idRelative"],
+        ["xpath=//h2[4]", "xpath:position"],
+        ["xpath=//h2[contains(.,'About Yourself')]", "xpath:innerText"]
+      ],
+      "value": "About Yourself"
+    }, {
+      "id": "95b35e62-800b-4157-8bd8-dc042548f30f",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(12)",
+      "targets": [
+        ["css=h2:nth-child(12)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[5]", "xpath:idRelative"],
+        ["xpath=//h2[5]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Account Management')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "799a32df-5eb9-4148-96a1-c0c2ee5b5405",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(12)",
+      "targets": [
+        ["css=h2:nth-child(12)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[5]", "xpath:idRelative"],
+        ["xpath=//h2[5]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Account Management')]", "xpath:innerText"]
+      ],
+      "value": "Account Management"
+    }, {
+      "id": "b4ba4530-8b75-4139-bc7b-8e9c5bedb9e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3:nth-child(14)",
+      "targets": [
+        ["css=h3:nth-child(14)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Realteo Avatar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6a8d670-c8c5-4013-9542-654191766ce2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3:nth-child(14)",
+      "targets": [
+        ["css=h3:nth-child(14)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Realteo Avatar')]", "xpath:innerText"]
+      ],
+      "value": "Realteo Avatar"
+    }, {
+      "id": "4a07bf0f-49f7-4500-836b-b8087307cd67",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3:nth-child(16)",
+      "targets": [
+        ["css=h3:nth-child(16)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h3[2]", "xpath:idRelative"],
+        ["xpath=//h3[2]", "xpath:position"],
+        ["xpath=//h3[contains(.,'Extra profile information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "607b858e-4fa4-4e8b-aacf-a5c9520ab2fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3:nth-child(16)",
+      "targets": [
+        ["css=h3:nth-child(16)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h3[2]", "xpath:idRelative"],
+        ["xpath=//h3[2]", "xpath:position"],
+        ["xpath=//h3[contains(.,'Extra profile information')]", "xpath:innerText"]
+      ],
+      "value": "Extra profile information"
+    }, {
+      "id": "1cd51bc3-4c54-400b-8698-98ac51de93e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(18)",
+      "targets": [
+        ["css=h2:nth-child(18)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[6]", "xpath:idRelative"],
+        ["xpath=//h2[6]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Customer billing address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d004287-10b9-4f9a-873d-34a6d84aec6e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(18)",
+      "targets": [
+        ["css=h2:nth-child(18)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[6]", "xpath:idRelative"],
+        ["xpath=//h2[6]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Customer billing address')]", "xpath:innerText"]
+      ],
+      "value": "Customer billing address"
+    }, {
+      "id": "f234fc11-ede6-452d-8842-c2e0f9d81cd0",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=h2:nth-child(18)",
+      "targets": [],
+      "value": "Customer billing address"
+    }, {
+      "id": "c95bd466-854e-4c62-b34a-bd8cb000dd8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpbody-content",
+      "targets": [
+        ["id=wpbody-content", "id"],
+        ["css=#wpbody-content", "css:finder"],
+        ["xpath=//div[@id='wpbody-content']", "xpath:attributes"],
+        ["xpath=//div[@id='wpbody']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d5ee10-f634-4f45-a05b-ff86646be7d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(20)",
+      "targets": [
+        ["css=h2:nth-child(20)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[7]", "xpath:idRelative"],
+        ["xpath=//h2[7]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Customer shipping address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f0d962-33b0-41c3-811d-321f345bea3e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(20)",
+      "targets": [
+        ["css=h2:nth-child(20)", "css:finder"],
+        ["xpath=//form[@id='your-profile']/h2[7]", "xpath:idRelative"],
+        ["xpath=//h2[7]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Customer shipping address')]", "xpath:innerText"]
+      ],
+      "value": "Customer shipping address"
+    }, {
+      "id": "c3f088bf-46e8-4138-8bbd-3a8efe6a91aa",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='your-profile']/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "Update Profile"
+    }]
+  }],
+  "suites": [{
+    "id": "77154e19-a3ff-42fa-8c81-269a7c399314",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e02b5a46-410b-4b1e-8888-a3b9ce733dfc"]
+  }],
+  "urls": ["http://realty-real-estatem1.upskills.in/wp-admin/profile.php"],
+  "plugins": []
+}
