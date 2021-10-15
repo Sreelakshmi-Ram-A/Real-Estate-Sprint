@@ -1,4 +1,7 @@
-package RealEstate.pages;
+/**
+ * 
+ */
+package com.appname.pages;
 
 import org.openqa.selenium.By;
 
@@ -72,7 +75,11 @@ public boolean isHeaderFound()
 		System.out.println(driver.getTitle());
 		String curTitle = driver.getTitle();
 		return curTitle;
-			
+		
+		
 	}
 
+
 }
+
+
