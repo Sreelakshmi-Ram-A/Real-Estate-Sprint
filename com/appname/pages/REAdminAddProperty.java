@@ -16,9 +16,9 @@ public class REAdminAddProperty {
 	By HeaderText = By.id("menu-posts-property"); 
 	By AddPropertiesbutton = By.xpath("//*[@id=\"menu-posts-property\"]/ul/li[3]/a"); 	
 	By title=By.cssSelector("#title");
-	By des=By.cssSelector(" #mceu_34");
-	By publish=By.xpath("//*[@id=\"publish\"]");
-	By updated=By.cssSelector("#message > p > a");
+	By des=By.id("content");
+	By publish=By.cssSelector("#publish");
+	By updated=By.cssSelector("#message > p");
 	
 	
 	
