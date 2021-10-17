@@ -11,9 +11,9 @@ public class REAdminAddNewFeature {
 
 	WebDriver driver;	
 
-	By username= By.id("user_login");
-	By password = By.id("user_pass");
-	By SignInbutton = By.cssSelector("#tab1 > form > p:nth-child(3) > input"); 
+	//By username= By.id("user_login");
+	//By password = By.id("user_pass");
+	//By SignInbutton = By.cssSelector("#tab1 > form > p:nth-child(3) > input"); 
 
 	By HeaderText = By.id("menu-posts-property"); 
 	By AddFeaturesbutton = By.xpath("//*[@id=\"menu-posts-property\"]/ul/li[4]/a");
@@ -24,7 +24,7 @@ public class REAdminAddNewFeature {
 	
 	By SearchText=By.cssSelector("#tag-search-input");
 	By Searchfeature=By.id("search-submit");
-	By feature=By.cssSelector("#tag-1826 > td.name.column-name.has-row-actions.column-primary > strong > a");
+	By feature=By.cssSelector("#tag-1959 > td.name.column-name.has-row-actions.column-primary > strong > a");
 	By editslug=By.id("slug");
 	By submitedit=By.cssSelector("#edittag > div > input");
 	
@@ -65,49 +65,24 @@ public class REAdminAddNewFeature {
 		
 	}	
 	
-	public boolean isUpdated()
-	{
-		boolean found=false;
-		try {
-			WebElement element = driver.findElement(SubmitAddRegion);
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			
-			found=driver.findElement(SubmitAddRegion).isDisplayed();
-		}
-		catch(Exception e)
+	
+	
+	
+		public boolean AdminLogin()
 		{
-			found=false;
-		}
-		return found;
-	}
-	
-	
-	public boolean propertyEdit()
-    {
-		driver.findElement(AddFeaturesbutton).click();
-    	//driver.findElement(EditProperty).click();
-		driver.findElement(name).sendKeys("hiiiiiii511");
-		driver.findElement(SubmitAddRegion).click();
-		boolean done=this.isUpdated();
-		return done;
-    }
-	
-	
-		public boolean AdminLogin(String un,String pw)
-		{
-			WebElement element = driver.findElement(username);
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-			driver.findElement(username).sendKeys(un);
-			driver.findElement(password).sendKeys(pw);
-			driver.findElement(SignInbutton).click();
+			//WebElement element = driver.findElement(username);
+			//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+			//driver.findElement(username).sendKeys(un);
+			//driver.findElement(password).sendKeys(pw);
+			//driver.findElement(SignInbutton).click();
 			driver.findElement(HeaderText).click();
 			driver.findElement(AddFeaturesbutton).click();
-			driver.findElement(name).sendKeys("5Bhk land");
+			driver.findElement(name).sendKeys("1Bhk land");
 			driver.findElement(slug).sendKeys("I will think about this later");
 			driver.findElement(des).sendKeys("And there,its  description");
 			driver.findElement(SubmitAddRegion).click();
 			
-			driver.findElement(SearchText).sendKeys("5Bhk land");
+			driver.findElement(SearchText).sendKeys("1Bhk land");
 			driver.findElement(Searchfeature).click();
 			driver.findElement(feature).click();
 			driver.findElement(By.id("slug")).clear();
@@ -126,12 +101,12 @@ public class REAdminAddNewFeature {
 		
 		}
 		
-		public boolean property(String pro)
+		/*public boolean property(String pro)
 		{
 			driver.findElement(AddFeaturesbutton).click();
 			boolean result=this.isHeaderFound();
 			return result;
-		}
+		}*/
 
 		public String getRELoginTitle(WebDriver driver) {
 			// TODO Auto-generated method stub
@@ -144,7 +119,13 @@ public class REAdminAddNewFeature {
 		}
 
 	}
-	
+
+
+
+
+
+
+
 		
 	
 
