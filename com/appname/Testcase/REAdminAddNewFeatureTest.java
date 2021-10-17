@@ -3,6 +3,8 @@ package RealEstate.test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import RealEstate.pages.REAdminAddNewFeature;
+import RealEstate.pages.REAdminAddNewRegion;
+import RealEstate.pages.REAdminLoginPage;
 
 import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
@@ -28,24 +30,19 @@ public class REAdminAddNewFeatureTest {
 		driver.navigate().to("http://realty-real-estatem1.upskills.in/wp-admin/edit.php?post_type=property" );
 		driver.manage().window().maximize();
 	}
-	// creating object of LoginPage class
 	
 	@Test
-	public void SignIn()
+	public void SignIn() throws InterruptedException
 	{
-		REAdminAddNewFeature login = new REAdminAddNewFeature(driver);
-		boolean success=login.AdminLogin("admin", "admin@123");
+		REAdminLoginPage login = new REAdminLoginPage(driver);
+		boolean success=login.AdminLogin("mohankrishna176@gmail.com", "Secret@123&&");
 		AssertJUnit.assertEquals(success, true);
+		REAdminAddNewFeature login1 = new REAdminAddNewFeature(driver);
+		boolean success1=login1.AdminLogin();
+		AssertJUnit.assertEquals(success1, true);
 	}
 	
-	@Test
-	public void Checkproperty()
-	{
-		REAdminAddNewFeature login = new REAdminAddNewFeature(driver);
-		String curTitle= login.getRELoginTitle(driver);
-		AssertJUnit.assertEquals(curTitle, "My Profile – Real Estate");
-	}
-		
+	
 	@AfterTest
 	public void teardown()
 	{
@@ -53,6 +50,21 @@ public class REAdminAddNewFeatureTest {
 	}
 	
 }
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
