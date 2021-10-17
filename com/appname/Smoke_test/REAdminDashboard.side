@@ -1,0 +1,124 @@
+{
+  "id": "0cb70f47-eef6-4e30-800e-d54014596c63",
+  "version": "2.0",
+  "name": "SmokeTest",
+  "url": "http://realty-real-estatem1.upskills.in/wp-admin/",
+  "tests": [{
+    "id": "fcb15266-71a1-48cf-818f-17c279c92bb2",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "7b4c094b-17d5-4468-9004-599593ae3110",
+    "name": "Admin_Dashboard",
+    "commands": [{
+      "id": "c9f75013-2fce-45a2-8b6b-cc72341e986a",
+      "comment": "",
+      "command": "open",
+      "target": "http://realty-real-estatem1.upskills.in/wp-admin/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e1955bb-7e58-47e3-88a5-586e7b3ef535",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39b87623-0a66-411b-8a12-db01e9c074b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=show-settings-link",
+      "targets": [
+        ["id=show-settings-link", "id"],
+        ["css=#show-settings-link", "css:finder"],
+        ["xpath=//button[@id='show-settings-link']", "xpath:attributes"],
+        ["xpath=//div[@id='screen-options-link-wrap']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Screen Options')]", "xpath:innerText"]
+      ],
+      "value": "Screen Options"
+    }, {
+      "id": "2c12d2c8-1da4-4f4d-86cb-23e0e00eb7b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-settings-link",
+      "targets": [
+        ["id=show-settings-link", "id"],
+        ["css=#show-settings-link", "css:finder"],
+        ["xpath=//button[@id='show-settings-link']", "xpath:attributes"],
+        ["xpath=//div[@id='screen-options-link-wrap']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Screen Options')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5cdb9e8-0f6c-4196-ba8e-b342a0860f5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=wp_welcome_panel-hide",
+      "targets": [
+        ["id=wp_welcome_panel-hide", "id"],
+        ["css=#wp_welcome_panel-hide", "css:finder"],
+        ["xpath=//input[@id='wp_welcome_panel-hide']", "xpath:attributes"],
+        ["xpath=//form[@id='adv-settings']/fieldset/label[7]/input", "xpath:idRelative"],
+        ["xpath=//label[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "060d960e-ce1a-4edb-a095-c5d27683fdb8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#dashboard_right_now > .hndle > span",
+      "targets": [
+        ["css=#dashboard_right_now > .hndle > span", "css:finder"],
+        ["xpath=//div[@id='dashboard_right_now']/h2/span", "xpath:idRelative"],
+        ["xpath=//div[2]/h2/span", "xpath:position"]
+      ],
+      "value": "At a Glance"
+    }, {
+      "id": "e94ab987-e93e-4c49-b90b-00e840cf7fce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.hndle .hide-if-no-js",
+      "targets": [
+        ["css=.hndle .hide-if-no-js", "css:finder"],
+        ["xpath=//div[@id='dashboard_quick_press']/h2/span/span", "xpath:idRelative"],
+        ["xpath=//h2/span/span", "xpath:position"]
+      ],
+      "value": "Quick Draft"
+    }, {
+      "id": "a50eff32-88a4-43de-ab49-7f6d1b8cd298",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#dashboard_activity > .hndle > span",
+      "targets": [
+        ["css=#dashboard_activity > .hndle > span", "css:finder"],
+        ["xpath=//div[@id='dashboard_activity']/h2/span", "xpath:idRelative"],
+        ["xpath=//h2/span", "xpath:position"]
+      ],
+      "value": "Activity"
+    }, {
+      "id": "52a757e4-5955-4816-855a-667cf9561196",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#dashboard_primary > .hndle > span",
+      "targets": [
+        ["css=#dashboard_primary > .hndle > span", "css:finder"],
+        ["xpath=//div[@id='dashboard_primary']/h2/span", "xpath:idRelative"],
+        ["xpath=//div[3]/h2/span", "xpath:position"]
+      ],
+      "value": "WordPress Events and News"
+    }]
+  }],
+  "suites": [{
+    "id": "d877557c-e697-4cad-8980-f48f51eb8ac7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fcb15266-71a1-48cf-818f-17c279c92bb2"]
+  }],
+  "urls": ["http://realty-real-estatem1.upskills.in/wp-admin/"],
+  "plugins": []
+}
