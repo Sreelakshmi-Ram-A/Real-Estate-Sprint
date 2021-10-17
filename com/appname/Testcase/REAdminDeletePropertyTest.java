@@ -3,8 +3,8 @@ package RealEstate.test;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 
-import RealEstate.pages.REAdminAddPropertySettings;
 import RealEstate.pages.REAdminDeleteProperty;
+import RealEstate.pages.REAdminLoginPage;
 
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.WebDriver;
@@ -35,27 +35,14 @@ public class REAdminDeletePropertyTest {
 	@Test
 	public void SignIn() throws InterruptedException
 	{
-		REAdminDeleteProperty login = new REAdminDeleteProperty(driver);
-		boolean success=login.AdminLogin("admin", "admin@123");
+		REAdminLoginPage login = new REAdminLoginPage(driver);
+		boolean success=login.AdminLogin("mohankrishna176@gmail.com", "Secret@123&&");
 		AssertJUnit.assertEquals(success, true);
+		REAdminDeleteProperty login1 = new REAdminDeleteProperty(driver);
+		boolean success1=login1.AdminLogin();
+		AssertJUnit.assertEquals(success1, true);
 	}
-	
-	@Test
-	public void Checkproperty()
-	{
-		REAdminDeleteProperty  login = new REAdminDeleteProperty(driver);
-		String curTitle= login.getRELoginTitle(driver);
-		AssertJUnit.assertEquals(curTitle, "My Profile – Real Estate");		//Properties ‹ Real Estate — WordPress
-	}
-	
-	/*@Test
-	public void Property()
-	{
-		REAdminPropertiesPage login = new REAdminPropertiesPage(driver);
-		boolean done=login.propertyEdit1(driver);
-		AssertJUnit.assertEquals(done, true);
-	}*/
-	
+			
 	@AfterTest
 	public void teardown()
 	{
@@ -63,6 +50,12 @@ public class REAdminDeletePropertyTest {
 	}
 	
 }
+
+
+
+
+
+  
 
 
 			  
