@@ -13,17 +13,13 @@ public class REAdminDeleteProperty {
 
 		WebDriver driver;	
 
-		//By username= By.id("user_login");
-
-		//By password = By.id("user_pass");
-		//By SignInbutton = By.cssSelector("#tab1 > form > p:nth-child(3) > input"); 
-
+		
 		By HeaderText = By.id("menu-posts-property"); 
 		By AllPropertiesbutton = By.xpath("//*[@id=\"wpbody-content\"]/div[3]/h1 "); 
 		By SearchText=By.cssSelector("#post-search-input");
 		By SearchProperty=By.id("search-submit");
 		
-		By property=By.cssSelector("#post-11735 > td.title.column-title.has-row-actions.column-primary.page-title > strong > a"); 
+		By property=By.cssSelector("#post-12202 > td.title.column-title.has-row-actions.column-primary.page-title > strong > a"); 
 		By MoveToTrash=By.linkText("Move to Trash");
 		By updated=By.cssSelector("#message > p");
 
@@ -64,11 +60,7 @@ public class REAdminDeleteProperty {
 
 			public boolean AdminLogin() throws InterruptedException
 			{
-				//WebElement element = driver.findElement(username);
-				//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-				//driver.findElement(username).sendKeys(un);
-				//driver.findElement(password).sendKeys(pw);
-				//driver.findElement(SignInbutton).click();
+				
 				
 				driver.findElement(HeaderText).click();
 				driver.findElement(AllPropertiesbutton ).click();
@@ -78,7 +70,7 @@ public class REAdminDeleteProperty {
 				//driver.findElement(By.linkText("Trash")).click();
 				
 				
-				driver.findElement(SearchText).sendKeys("house");
+				driver.findElement(SearchText).sendKeys("hogiid Lucky");
 				driver.findElement(SearchProperty).click();
 				
 				
@@ -88,7 +80,7 @@ public class REAdminDeleteProperty {
 				
 				driver.findElement(MoveToTrash).click();
 				driver.findElement(AllPropertiesbutton).click();
-				driver.findElement(SearchText).sendKeys("house");
+				driver.findElement(SearchText).sendKeys("hogiid Lucky");
 				driver.findElement(SearchProperty).click();
 				
 				
