@@ -29,9 +29,7 @@ public class REAdminMediaPage {
 	{
 		boolean res=false;
 	    try {
-		WebElement element = driver.findElement(msg);
-		JavascriptExecutor js = (JavascriptExecutor) driver;		
-		//updated 
+		//updated message verified
 		res=driver.findElement(msg).isDisplayed();
 	}
 	catch(Exception e)
@@ -40,17 +38,7 @@ public class REAdminMediaPage {
 	}
 	return res;
 	}
-	/*
-	public boolean search()
-	{
-		driver.findElement(media).click();
-		driver.findElement(lib).click();
-		driver.findElement(search).sendKeys("tiger");			
-		driver.findElement(search).sendKeys(Keys.ENTER);			
-		boolean res=this.check(smsg);
-		return res;
-	}
-	*/
+	
 	public boolean search(String name)
 	{
 		driver.findElement(media).click();
@@ -64,7 +52,7 @@ public class REAdminMediaPage {
 	{
 		driver.findElement(lib).click();
 		//driver.findElement(By.className("view-list")).click();
-		driver.findElement(By.xpath("//*[@id=\"the-list\"]//tr[3]")).click();
+		driver.findElement(By.xpath("//*[@id=\"the-list\"]//tr[1]")).click();//selects first image and edits
 		driver.findElement(By.linkText("Edit")).click();
 		driver.findElement(By.id("title")).clear();
 		driver.findElement(By.id("title")).sendKeys("Sweet home");
@@ -75,29 +63,29 @@ public class REAdminMediaPage {
 		driver.findElement(By.id("attachment_content")).clear();
 		driver.findElement(By.id("attachment_content")).sendKeys("This is beautiful house.");
 		driver.findElement(update).click();
-		boolean success=this.check(upmsg);
+		boolean success=this.check(upmsg);//edit message is verified
 		return success;
 	}
 	public boolean delete() throws InterruptedException
 	{
 		driver.findElement(lib).click();
-		driver.findElement(By.xpath("//*[@id=\"the-list\"]//tr[8]")).click();
+		driver.findElement(By.xpath("//*[@id=\"the-list\"]//tr[6]")).click();//selects sixth image and deletes
 		Thread.sleep(1000);
 		driver.findElement(By.linkText("Delete Permanently")).click();	
 		Thread.sleep(1000);
 		Alert al = driver.switchTo().alert();
 	    // click on OK to accept with accept()
 	    al.accept();
-		boolean result=this.check(delmsg);
+		boolean result=this.check(delmsg);//deleted message is verified
 		return result;
 	}
 
 	public boolean view()
 	{
 		driver.findElement(lib).click();
-		driver.findElement(By.xpath("//*[@id=\"the-list\"]//tr[3]")).click();
+		driver.findElement(By.xpath("//*[@id=\"the-list\"]//tr[1]")).click();//selects first image from table and viewed
 		driver.findElement(By.linkText("View")).click();
-		boolean rs=this.check(vmsg);
+		boolean rs=this.check(vmsg);//checks view is succussfull or not
 		return rs;
 	}
 }
