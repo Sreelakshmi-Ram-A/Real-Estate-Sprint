@@ -1,66 +1,51 @@
-/**
- * 
- */
-package com.appname.Testcase;
+package RealEstate.Test;
 
+import org.testng.annotations.Test;
+
+import RealEstate.Pages.REAdminLogin;
+
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import com.appname.pages.REAdminLoginPage;
 
 public class REAdminLoginTest {
-	static WebDriver driver;
-	static REAdminLoginPage login;
-	@BeforeTest
-	public void veryfylogin()
-	{
 	
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sreelakshmi Ram.A\\Documents\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://realty-real-estatem1.upskills.in/my-profile/?redirect_to=http://realty-real-estatem1.upskills.in/wp-admin/\r\n"
-				+ "");
-		driver.manage().window().maximize();
-		REAdminLoginPage login = new REAdminLoginPage(driver);
+		static WebDriver driver;
+		static REAdminLogin login;
+		@BeforeTest
+		public void veryfylogin()
+		{
+		
+			System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.get("http://realty-real-estatem1.upskills.in/my-profile/?redirect_to=http://realty-real-estatem1.upskills.in/wp-admin/\r\n"
+					+ "");
+			driver.manage().window().maximize();
+			REAdminLogin login = new REAdminLogin(driver);
+		}
+		// creating object of LoginPage class
+		@Test
+		public void CheckTitle()
+		{
+			REAdminLogin login = new REAdminLogin(driver);
+			String curTitle= login.getRELoginTitle(driver);
+			AssertJUnit.assertEquals(curTitle, "My Profile â€“ Real Estate");		
+		}
+		@Test
+		public void SignIn()
+		{
+			REAdminLogin login = new REAdminLogin(driver);
+			boolean success=login.AdminLogin("mohankrishna176@gmail.com", "Secret@123&&");
+			AssertJUnit.assertEquals(success, true);
+		}
+		@AfterTest
+		public void teardown()
+		{
+			driver.quit();
+		}
+		
 	}
-	// creating object of LoginPage class
-
-	@Test
-	public void SignIn() throws IOException
-	{
-		//Properties is something that operates on key and values
-		
-				Properties obj=new Properties();
-				FileInputStream objfile=new FileInputStream("AdminLogin.properties");
-				obj.load(objfile);
-				String s_an=obj.getProperty("adminname");
-				String s_pw=obj.getProperty("password");
-		
-		
-		REAdminLoginPage login = new REAdminLoginPage(driver);
-		
-		String curTitle= login.getRELoginTitle(driver);
-		Assert.assertEquals(curTitle, "My Profile – Real Estate");
-		
-		boolean success=login.AdminLogin(s_an,s_pw);
-		Assert.assertEquals(success, true);
-		
-		
-	}
-	@AfterTest
-	public void teardown()
-	{
-		driver.quit();
-	}
-	
-}
