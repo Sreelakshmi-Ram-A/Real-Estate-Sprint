@@ -20,7 +20,7 @@ public class REAdminAddNewRegion {
 	
 	By SearchText=By.cssSelector("#tag-search-input");
 	By Searchregion=By.id("search-submit");
-	By region=By.cssSelector("#tag-1924 > td.name.column-name.has-row-actions.column-primary > strong > a ");// #tag-1825 > td.name.column-name.has-row-actions.column-primary > strong > a
+	By region=By.cssSelector("#tag-1995 > td.name.column-name.has-row-actions.column-primary > strong > a");
 	By editslug=By.id("slug");
 	By submitedit=By.cssSelector("#edittag > div > input");
 	
@@ -59,35 +59,21 @@ public class REAdminAddNewRegion {
 		
 	}	
 	
-	public boolean isUpdated()
-	{
-		boolean found=false;
-		try {
-			WebElement element = driver.findElement(SubmitAddRegion);
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			
-			found=driver.findElement(SubmitAddRegion).isDisplayed();
-		}
-		catch(Exception e)
-		{
-			found=false;
-		}
-		return found;
-	}
 	
+
 
 		public boolean AdminLogin() throws InterruptedException//String un,String pw)
 		{
 			
 			driver.findElement(HeaderText).click();
 			driver.findElement(AddRegionsbutton).click();
-			driver.findElement(name).sendKeys("South Korea");
+			driver.findElement(name).sendKeys("India");
 			driver.findElement(slug).sendKeys("I dont know");
-			driver.findElement(des).sendKeys("And i am the description");
+			driver.findElement(des).sendKeys("Hiiiiiiiiiiiiiiiiiiiiii i am the description");
 			Thread.sleep(1000);
 			driver.findElement(SubmitAddRegion).click();
 			
-			driver.findElement(SearchText).sendKeys("South Korea");
+			driver.findElement(SearchText).sendKeys("India");
 			Thread.sleep(1000);
 			driver.findElement(Searchregion).click();
 			driver.findElement(region).click();
@@ -107,23 +93,7 @@ public class REAdminAddNewRegion {
 		
 		}
 		
-		public boolean property(String pro)
-		{
-			driver.findElement(AddRegionsbutton).click();
-			
-			boolean result=this.isHeaderFound();
-			return result;
-		}
-
-		public String getRELoginTitle(WebDriver driver) {
-			// TODO Auto-generated method stub
-			
-			System.out.println(driver.getTitle());
-			String curTitle = driver.getTitle();
-			return curTitle;
-			
-			
-		}
+		
 
 	}
 	
