@@ -11,9 +11,7 @@ public class REAdminAddNewFeature {
 
 	WebDriver driver;	
 
-	//By username= By.id("user_login");
-	//By password = By.id("user_pass");
-	//By SignInbutton = By.cssSelector("#tab1 > form > p:nth-child(3) > input"); 
+	
 
 	By HeaderText = By.id("menu-posts-property"); 
 	By AddFeaturesbutton = By.xpath("//*[@id=\"menu-posts-property\"]/ul/li[4]/a");
@@ -70,11 +68,7 @@ public class REAdminAddNewFeature {
 	
 		public boolean AdminLogin()
 		{
-			//WebElement element = driver.findElement(username);
-			//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-			//driver.findElement(username).sendKeys(un);
-			//driver.findElement(password).sendKeys(pw);
-			//driver.findElement(SignInbutton).click();
+			
 			driver.findElement(HeaderText).click();
 			driver.findElement(AddFeaturesbutton).click();
 			driver.findElement(name).sendKeys("1Bhk land");
@@ -101,24 +95,20 @@ public class REAdminAddNewFeature {
 		
 		}
 		
-		/*public boolean property(String pro)
-		{
-			driver.findElement(AddFeaturesbutton).click();
-			boolean result=this.isHeaderFound();
-			return result;
-		}*/
-
-		public String getRELoginTitle(WebDriver driver) {
-			// TODO Auto-generated method stub
-			
-			System.out.println(driver.getTitle());
-			String curTitle = driver.getTitle();
-			return curTitle;
-			
-			
-		}
+		
 
 	}
+
+
+
+
+
+
+
+		
+	
+
+
 
 
 
