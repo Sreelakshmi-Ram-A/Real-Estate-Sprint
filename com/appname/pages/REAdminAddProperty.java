@@ -11,18 +11,15 @@ import org.openqa.selenium.WebElement;
 public class REAdminAddProperty {
 	WebDriver driver;	
 
-
-
 	By HeaderText = By.id("menu-posts-property"); 
 	By AddPropertiesbutton = By.xpath("//*[@id=\"menu-posts-property\"]/ul/li[3]/a"); 	
 	By title=By.cssSelector("#title");
-	By des=By.id("content");
+	By des=By.id("mceu_35"); //content
+	
 	By publish=By.cssSelector("#publish");
 	By updated=By.cssSelector("#message > p");
 	
 	
-	
-
 
 	//creating parameterized constructor to initialize WebDriver reference
 	public REAdminAddProperty(WebDriver driver)
@@ -60,36 +57,19 @@ public class REAdminAddProperty {
 		
 	}	
 	
-	public boolean isUpdated()
-	{
-		boolean found=false;
-		try {
-			WebElement element = driver.findElement(updated);
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			
-			found=driver.findElement(updated).isDisplayed();
-		}
-		catch(Exception e)
-		{
-			found=false;
-		}
-		return found;
-	}
 	
 	
 	
 	
-		public boolean AdminLogin()throws InterruptedException //(String un,String pw)
+		public boolean AdminLogin()throws InterruptedException 
 		{
 			
 			driver.findElement(HeaderText).click();
 			driver.findElement(AddPropertiesbutton).click();
-			driver.findElement(title).sendKeys("Hiiiiiiii,here add a title");
+			driver.findElement(title).sendKeys("Hello hello,here add a title");
 			driver.findElement(des).sendKeys("Guys add a description here");
 			driver.findElement(publish).click();
-			
-			
-			
+					
 			boolean success=this.isHeaderFound();
 			
 			return success;
@@ -97,26 +77,11 @@ public class REAdminAddProperty {
 		
 		}
 		
-		public boolean property(String pro)
-		{
-			driver.findElement(AddPropertiesbutton).click();
-			
-			boolean result=this.isHeaderFound();
-			return result;
-		}
+		
 
-		public String getRELoginTitle(WebDriver driver) {
-			// TODO Auto-generated method stub
-			
-			System.out.println(driver.getTitle());
-			String curTitle = driver.getTitle();
-			return curTitle;
-			
-			
-		}
+		
 
 	}
-	
 		
 	
 
