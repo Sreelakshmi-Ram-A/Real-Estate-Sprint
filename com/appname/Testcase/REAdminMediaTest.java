@@ -39,7 +39,7 @@ public class REAdminMediaTest {
 	public void SignIn()
 	{
 		REAdminLoginPage media = new REAdminLoginPage(driver);
-		boolean success=media.AdminLogin("admin", "admin@123");
+		boolean success=media.AdminLogin("mohankrishna176@gmail.com", "Secret@123&&");
 		Assert.assertEquals(success, true);
 	}
 	
@@ -51,8 +51,8 @@ public class REAdminMediaTest {
 		Assert.assertEquals(success, true);	
 		boolean success2=media.edit();
 		Assert.assertEquals(success2, true);
-		//boolean success3=media.delete();
-		//Assert.assertEquals(success3, true);
+		boolean success3=media.delete();
+		Assert.assertEquals(success3, true);
 		boolean success4=media.view();
 		Assert.assertEquals(success4, true);
 	}
